@@ -27,6 +27,11 @@
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
+				<section>Slide 3</section>
+				<section>Slide 4</section>
+				<section>Slide 5</section>
+				<section>Slide 6</section>
+				<section>Slide 7</section>
 			</div>
 		</div>
 
@@ -37,7 +42,15 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				multiplex: {
+					// Example values. To generate your own, see the socket.io server instructions.
+					secret: '15674022996168032854', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+					id: '4a4d7d0c72021a32', // Obtained from socket.io server
+					url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+				},
 				dependencies: [
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js', async: true },
+					{ src: 'plugin/multiplex/master.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
