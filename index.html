@@ -76,7 +76,7 @@
 						<pre><code class="python">def sync_inventory():
 	rows = parse_csv_file()
 	print(rows)
-	for row_batch in rows(0, len(rows), 500):
+	for row_batch in create_batchs(rows, 500):
 		print(row_batch)
 		sku_set = set([row[2] for row in row_batch])
 		print(sku_set)
