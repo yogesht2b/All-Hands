@@ -28,8 +28,8 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h3>Outline</h3>
+				<section data-background-color="#e0700e" style="color: white">
+					<h3 style="color:white">Outline</h3>
 					<ul>
 						<li>Learn and know your tools and environment.</li>
 						<li>Importance of code re-usability</li>
@@ -38,12 +38,12 @@
 						<li>Do's and Dont's</li>
 					</ul>
 				</section>
-				<section>
+				<section  data-background-color="#e0700e" style="color: white">
 					<section>
-						<h3>Learn and know your tools and environment.</h3>
+						<h3 style="color:white">Learn and know your tools and environment.</h3>
 					</section>
 					<section>
-						<h3>Incidents & Learnings</h3>
+						<h3 style="color:white">Incidents & Learnings</h3>
 						<ul>
 							<li>Celery issues.</li>
 							<li>Quivers Granite gunicorn.</li>
@@ -52,30 +52,30 @@
 						</ul>
 					</section>
 				</section>
-				<section>
+				<section  data-background-color="#e0700e" style="color: white">
 					<section>
-						<h3>Importance of code re-usability and handling upcoming changes.</h3>
+						<h3 style="color:white">Importance of code re-usability and handling upcoming changes.</h3>
 					</section>
 					<section>
-						<h3>Incidents & Learnings</h3>
+						<h3 style="color:white">Incidents & Learnings</h3>
 						<ul>
 							<li>Magento 2 -> Magento 1 switching.</li>
 							<li>Moving towards Konect v2.</li>
 						</ul>
 					</section>
 				</section>
-				<section>
+				<section  data-background-color="#e0700e" style="color: white">
 					<section>
-						<h3>Write scalable code.</h3>
+						<h3 style="color:white">Write scalable code.</h3>
 					</section>
 					<section>
-						<h3>Incidents & Learnings</h3>
+						<h3 style="color:white">Incidents & Learnings</h3>
 					</section>
 					<section>
-						<h3>Slow Inventory sync.</h3>
+						<h3 style="color:white">Slow Inventory sync.</h3>
 					</section>
 					<section>
-						<h3>Issue in RetailPro inventory sync.</h3>
+						<h3 style="color:white">Issue in RetailPro inventory sync.</h3>
 						<pre><code class="python">def sync_inventory():
 	rows = parse_csv_file()
 	print(rows)
@@ -92,20 +92,20 @@
 		bulk_create(new_pvs)</code></pre>
 					</section>
 				</section>
-				<section>
+				<section  data-background-color="#e0700e" style="color: white">
 					<section>
-						<h3>Deployment & Rollbacks.</h3>
+						<h3 style="color:white">Deployment & Rollbacks.</h3>
 					</section>
 					<section>
-						<h3>Incidents & Learnings</h3>
+						<h3 style="color:white">Incidents & Learnings</h3>
 						<ul>
 							<li>Middleware down-time because of a wrong deployment and risks of manual deployments.</li>
 							<li> RetailPro & Mephisto Live rollback.</li>
 						</ul>
 					</section>
 				</section>
-				<section>
-					<h3>Do's and Dont's</h3>
+				<section  data-background-color="#e0700e" style="color: white">
+					<h3 style="color:white">Do's and Dont's</h3>
 					<ul>
 						<li>Don't leave edge cases, every edge/corner case will convert into a bottleneck. e.g- Not handling API failures, Ftruncate error.</li>
 						<li>Don't mix responsibilities of different systems(frontend-backend).</li>
