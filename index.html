@@ -67,10 +67,26 @@
 					</section>
 					<section>
 						<h3>Incidents & Learnings</h3>
-						<ul>
-							<li>Slow Inventory sync.</li>
-							<li>Issue in RetailPro inventory sync.</li>
-						</ul>
+					</section>
+					<section>
+						<h3>Slow Inventory sync.</h3>
+					</section>
+					<section>
+						<h3>Issue in RetailPro inventory sync.</h3>
+						<pre><code class="python">def sync_inventory():
+	rows = parse_csv_file()
+	print(rows)
+	for row_batch in rows(0, len(rows), 500):
+		print(row_batch)
+		sku_set = set([row[2] for row in row_batch])
+		print(sku_set)
+		existing_pvs = PV.query(sku__in=sku_set)
+		print(existing_pvs)
+		new_pvs = sku_set - existing_pvs
+		print(new_pvs)
+		transaction = create_updation_transaction(row_batch, existing_pvs)
+		transaction.commit()
+		bulk_create(new_pvs)</code></pre>
 					</section>
 				</section>
 				<section>
