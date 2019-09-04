@@ -25,13 +25,74 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-				<section>Slide 4</section>
-				<section>Slide 5</section>
-				<section>Slide 6</section>
-				<section>Slide 7</section>
+				<section>
+					<h3>Outline</h3>
+					<ul>
+						<li>Learn and know your tools and environment.</li>
+						<li>Importance of code re-usability</li>
+						<li>Writing scalable code</li>
+						<li>Deployment & Rollbacks</li>
+						<li>Do's and Dont's</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Learn and know your tools and environment.</h3>
+					</section>
+					<section>
+						<h3>Incidents & Learnings</h3>
+						<ul>
+							<li>Celery issues.</li>
+							<li>Quivers Granite gunicorn.</li>
+							<li>Effect of your work on other running processes(long or infinitely running processes)</li>
+							<li>Django n+1 query problem</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Importance of code re-usability and handling upcoming changes.</h3>
+					</section>
+					<section>
+						<h3>Incidents & Learnings</h3>
+						<ul>
+							<li>Magento 2 -> Magento 1 switching.</li>
+							<li>Moving towards Konect v2.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Write scalable code.</h3>
+					</section>
+					<section>
+						<h3>Incidents & Learnings</h3>
+						<ul>
+							<li>Slow Inventory sync.</li>
+							<li>Issue in RetailPro inventory sync.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Deployment & Rollbacks.</h3>
+					</section>
+					<section>
+						<h3>Incidents & Learnings</h3>
+						<ul>
+							<li>Middleware down-time because of a wrong deployment and risks of manual deployments.</li>
+							<li> RetailPro & Mephisto Live rollback.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h3>Do's and Dont's</h3>
+					<ul>
+						<li>Don't leave edge cases, every edge/corner case will convert into a bottleneck. e.g- Not handling API failures, Ftruncate error.</li>
+						<li>Don't mix responsibilities of different systems(frontend-backend).</li>
+						<li>Do check for security concerns - SQL injections.</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
